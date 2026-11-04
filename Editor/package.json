@@ -1,0 +1,22 @@
+{
+  "name": "com.yourname.tp-integrations",
+  "version": "1.0.0",
+  "displayName": "3rd Party Integrations Manager",
+  "description": "Editor window to add and remove common mobile-game SDKs (AdMob, AppLovin, Firebase, AppsFlyer, ATT, IAP, haptics and more) with checkboxes, grouped by category.",
+  "unity": "2021.3",
+  "documentationUrl": "https://github.com/YOUR-USERNAME/YOUR-REPO#readme",
+  "changelogUrl": "https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/LICENSE",
+  "keywords": [
+    "sdk",
+    "integrations",
+    "admob",
+    "mobile",
+    "editor",
+    "tools"
+  ],
+  "author": {
+    "name": "YOUR NAME",
+    "url": "https://github.com/YOUR-USERNAME"
+  }
+}
