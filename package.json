@@ -1,22 +1,24 @@
 {
-  "name": "com.yourname.tp-integrations",
+  "name": "com.satvik0001.third-party-integrations",
   "version": "1.0.0",
   "displayName": "3rd Party Integrations Manager",
-  "description": "Editor window to add and remove common mobile-game SDKs (AdMob, AppLovin, Firebase, AppsFlyer, ATT, IAP, haptics and more) with checkboxes, grouped by category.",
+  "description": "A Unity Editor extension to install and manage commonly used third-party SDKs and packages for mobile game development.",
   "unity": "2021.3",
-  "documentationUrl": "https://github.com/YOUR-USERNAME/YOUR-REPO#readme",
-  "changelogUrl": "https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/CHANGELOG.md",
-  "licensesUrl": "https://github.com/YOUR-USERNAME/YOUR-REPO/blob/main/LICENSE",
+  "documentationUrl": "https://github.com/Satvik0001/Unity-Third-Party-Integrations#readme",
+  "changelogUrl": "https://github.com/Satvik0001/Unity-Third-Party-Integrations/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/Satvik0001/Unity-Third-Party-Integrations/blob/main/LICENSE",
   "keywords": [
+    "unity",
     "sdk",
     "integrations",
     "admob",
     "mobile",
+    "game-development",
     "editor",
     "tools"
   ],
   "author": {
-    "name": "YOUR NAME",
-    "url": "https://github.com/YOUR-USERNAME"
+    "name": "Satvik",
+    "url": "https://github.com/Satvik0001"
   }
 }
