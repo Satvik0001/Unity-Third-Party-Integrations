@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vs/
+.idea/
+*.swp
+
+# Unity (only matters if you open this folder as a Unity project)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Ll]ogs/
+UserSettings/
+*.csproj
+*.sln
