@@ -30,7 +30,7 @@ Add and remove the SDKs mobile games usually need (ads, attribution, haptics, IA
 3. Paste:
 
    ```
-   https://github.com/YOUR-USERNAME/YOUR-REPO.git
+   (https://github.com/Satvik0001/Unity-Third-Party-Integrations.git)
    ```
 
 4. Click **Add**.
@@ -38,7 +38,7 @@ Add and remove the SDKs mobile games usually need (ads, attribution, haptics, IA
 To pin a version, add a tag:
 
 ```
-https://github.com/YOUR-USERNAME/YOUR-REPO.git#1.0.0
+https://github.com/Satvik0001/Unity-Third-Party-Integrations.git#1.0.0
 ```
 
 ### Option B: edit `Packages/manifest.json`
@@ -46,12 +46,12 @@ https://github.com/YOUR-USERNAME/YOUR-REPO.git#1.0.0
 Add this line inside `"dependencies"`:
 
 ```json
-"com.yourname.tp-integrations": "https://github.com/YOUR-USERNAME/YOUR-REPO.git#1.0.0"
+https://github.com/Satvik0001/Unity-Third-Party-Integrations.git
 ```
 
 ### Option C: `.unitypackage` (no Git needed)
 
-1. Download `ThirdPartyIntegrations.unitypackage` from the [Releases](https://github.com/YOUR-USERNAME/YOUR-REPO/releases) page.
+1. Download `ThirdPartyIntegrations.unitypackage` from the [Releases] https://github.com/Satvik0001/Unity-Third-Party-Integrations.git page.
 2. In Unity choose **Assets → Import Package → Custom Package...** and import everything.
 
 ## Usage
