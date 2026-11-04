@@ -30,7 +30,7 @@ Add and remove the SDKs mobile games usually need (ads, attribution, haptics, IA
 3. Paste:
 
    ```
-   (https://github.com/Satvik0001/Unity-Third-Party-Integrations.git)
+   https://github.com/Satvik0001/Unity-Third-Party-Integrations.git
    ```
 
 4. Click **Add**.
