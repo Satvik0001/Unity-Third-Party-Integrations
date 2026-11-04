@@ -23,21 +23,22 @@ Add and remove the SDKs mobile games usually need (ads, attribution, haptics, IA
 
 ## Installation
 
-### Option A: Package Manager (recommended)
+### Option A: Package Manager (Recommended)
 
-1. In Unity open **Window → Package Manager**.
-2. Click **+ → Add package from git URL...**
-3. Paste:
+1. Open Unity and navigate to **Window → Package Manager**.
+2. Click the **+** button.
+3. Select **Add package from git URL...**
+4. Paste the following URL:
 
-   ```
-   https://github.com/Satvik0001/Unity-Third-Party-Integrations.git
-   ```
-
-4. Click **Add**.
-
-To pin a version, add a tag:
-
+```text
+https://github.com/Satvik0001/Unity-Third-Party-Integrations.git
 ```
+
+5. Click **Add** and wait for Unity to install the package.
+
+To install a specific version:
+
+```text
 https://github.com/Satvik0001/Unity-Third-Party-Integrations.git#1.0.0
 ```
 
