@@ -52,7 +52,7 @@ When removing an SDK, it features **Smart Safe Code Cleanup** that comments out 
 2. Click the **`+`** icon in the top left and select **Add package from git URL...**.
 3. Enter:
    ```text
-   https://github.com/Satvik0001/Unity-Third-Party-Integrations.git](https://github.com/Satvik0001/Unity-Third-Party-Integrations.git?path=/Editor
+   https://github.com/Satvik0001/Unity-Third-Party-Integrations.git
    ```
 4. Click **Add**.
 
