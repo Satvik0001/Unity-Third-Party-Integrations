@@ -438,9 +438,24 @@ namespace TPIntegrations.Editor
             }
             foreach (var i in list.Where(x => !string.IsNullOrEmpty(x.RemoveWarning)))
                 msg += "\n\n⚠ " + i.Name + ": " + i.RemoveWarning;
-            msg += "\n\nScripts that reference these SDKs may stop compiling. Make sure your work is committed.";
 
-            if (!EditorUtility.DisplayDialog("Remove integrations", msg, "Remove", "Cancel")) return;
+            // scripts of yours that still use the SDK (planned BEFORE anything is deleted; nothing is changed yet)
+            var plan = CodeCleaner.Plan(list);
+            bool cleanCode = false;
+            if (plan.Count > 0)
+            {
+                msg += "\n\nYour scripts still using these SDKs - the offending lines will be COMMENTED OUT (backup kept):\n"
+                    + CodeCleaner.Describe(plan, 12);
+                int choice = EditorUtility.DisplayDialogComplex("Remove integrations",
+                    msg + "\n\nMake sure your work is committed.", "Remove + comment out code", "Cancel", "Remove only");
+                if (choice == 1) return;
+                cleanCode = choice == 0;
+            }
+            else
+            {
+                msg += "\n\nNo scripts of yours reference these SDKs. Make sure your work is committed.";
+                if (!EditorUtility.DisplayDialog("Remove integrations", msg, "Remove", "Cancel")) return;
+            }
 
             var report = new List<string>();
             foreach (var i in folderItems)
@@ -452,6 +467,9 @@ namespace TPIntegrations.Editor
                 }
                 report.Add("✓ " + i.Name + " removed");
             }
+
+            if (cleanCode) report.AddRange(CodeCleaner.Apply(plan));
+            else if (plan.Count > 0) report.Add("⚠ " + plan.Count + " file(s) still reference the removed SDKs and may not compile.");
 
             var upm = list.Where(i => IsPackage(i)).ToList();
             foreach (var i in list) selected.Remove(i.Id);
